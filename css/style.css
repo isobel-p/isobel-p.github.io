@@ -1,0 +1,27 @@
+:root {
+    --bg:#FFFDF7;
+    --black:#2B2D42;
+    --accent:#FDC921;
+    --secondary:#6798C0;
+    /*https://coolors.co/palette/2b2d42-8d99ae-edf2f4-ef233c-d90429*/
+    /*https://coolors.co/palette/fdc921-fdd85d-fffdf7-99d6ea-6798c0*/
+}
+
+nav {
+    /* background-color: red;*/
+    padding: 20px;
+}
+
+#hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+}
+
+h1 {
+    color: var(--accent);
+}
+
+a {
+    color:var(--secondary);
+}
