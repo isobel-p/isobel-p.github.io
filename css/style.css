@@ -1,6 +1,7 @@
 :root {
     --bg:#FFFDF7;
-    --black:#2B2D42;
+    /*--black:#2B2D42;*/
+    --black:black;
     --accent:#fac565;
     --secondary:#6798C0;
     --nav: #FDD85D;
@@ -10,18 +11,33 @@
 
 @font-face {
     font-family: "bold";
-    src: url("/fonts/JetBrainsMono-Bold.woff2");
+    src:url("/fonts/Domine-VariableFont_wght.ttf")
 }
 
 @font-face {
     font-family: "normal";
-    src: url("/fonts/JetBrainsMono-Medium.woff2");
+    /*src: url("/fonts/JetBrainsMono-Medium.woff2");*/
+    src:url("/fonts/Carlito-Regular.ttf")
 }
 
+html, body {
+margin: 0;
+padding: 0;
+height: 100%;
+}
 body {
-    background-color: var(--bg);
+    /*
+    background-color: var(--bg);*/
+    /*
+    background-image: url("/images/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    */
+    position: relative;
     color:var(--black);
     font-family: "normal", sans-serif;
+    height: 100%;
 }
 /*
 nav {
@@ -47,18 +63,43 @@ main {
     margin:0 auto;
 }
 
-#hero {
+#hero{
+    color:var(--black);
+    background-image: url("/images/bg.jpg"); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: 50vh; /* or min-height: 50vh */ 
+    position: relative;
+}
+
+#hero-text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.split {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 h1 {
-    color: var(--accent);
-    font-family: "bold", sans-serif;
+    /*color: var(--accent);*/
+    font-family: "bold", serif;
     font-size: 50px;
     margin-bottom: 2px;
 }
+
+
+
+h2 {
+    font-family: "bold", serif;
+}
+
 
 a {
     color:var(--secondary);
@@ -83,4 +124,11 @@ p {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.github-corner {
+position: fixed; /* or absolute if you prefer inside a container */
+top: 0;
+right: 0;
+z-index: 9999;
 }
