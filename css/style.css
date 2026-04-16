@@ -24,6 +24,7 @@ html, body {
 margin: 0;
 padding: 0;
 height: 100%;
+background-color: var(--bg);
 }
 body {
     /*
@@ -131,4 +132,19 @@ position: fixed; /* or absolute if you prefer inside a container */
 top: 0;
 right: 0;
 z-index: 9999;
+}
+
+.tinylytics_kudos {
+    border: 2px solid var(--accent);
+    border-radius: 5px;
+    background-color: white;
+    color: var(--accent);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tinylytics_kudos:hover {
+    background-color: var(--accent);
+    color:white;
 }
